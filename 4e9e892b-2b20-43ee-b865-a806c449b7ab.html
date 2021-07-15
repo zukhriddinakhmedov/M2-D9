@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--
+IMPORTANT:
+Start from the previous Musical assignment project you've created on M2-D2
+    
+ASSIGNMENT RULES
+- The project must be pushed to a new repository and linked in EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided and documentation.
+- To test the page, open it with your browser and inspect it with developer tools / device emulator.
+- Use Bootstrap4.6 classes to create the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+
+NOTE:
+Most of the requirements in this exercises reference a bootstrap's functionality or component. 
+Make sure you check the documentation before creting anything custom.
+-->
+
+<html>
+
+<head>
+    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <style>
+        /* PREVIOUS CODE */
+img{
+   height: auto;
+   width: auto;
+}
+body{
+   background-color: grey;
+}
+h1{
+text-align: center;  
+margin-left: -900px;  
+color: white;
+}
+
+
+.inpStudent{
+    background-color: grey;
+    text-emphasis-color: white;
+}
+.Settings{
+    margin-left: -750px;
+}
+.autoplay-controls{
+    margin-left: -750px;
+}
+hr{
+    background-color: white;
+    width: 20%;
+    margin-left: 400px;
+}
+::placeholder{
+    color:white;
+}
+.profile_img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.navbar{
+    background-color: #0d0d0d;
+}
+.confirmSettings{
+    margin-left: 400px;
+}
+
+</style>
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Favourite Album</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">Favourites</span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+<!-- EXERCISE 3
+        Create a responsive section for your favourite albums.
+        In this section you should have:
+        - 4 albums per row when the screen is very large
+        - 3 albums per row when you are on a tablet (or a smaller viewport)
+        - 2 albums per row when you are on a small screen
+    -->
+    <div class="container">
+        <h1>Favourite Albums</h1>
+        <div class="row">
+          <div class="col-sm-2 col-md-3 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="th (5).jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nooren Mohamed Siddiq</h5>
+                  <p class="card-text">Title:Quran<br>Duration:10:00:00</p>
+                  <a href="#" class="btn btn-primary">Go to the playlist</a>
+                </div>
+              </div>
+         </div>
+          <div class="col-sm-2 col-md-3 col-lg-4">
+            <div class="card" style="width: 18rem;">
+<img src="th (1).jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Abdul Rahman Al-Soudais</h5>
+<p class="card-text">Title:Quran<br>Duration:10:00:00</p>
+<a href="#" class="btn btn-primary">Go to the playlist</a>
+</div>
+</div>
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4">
+            <div class="card" style="width: 18rem;">
+<img src="th (2).jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Al-Maher</h5>
+<p class="card-text">Title:Quran<br>Duration:10:00:00</p>
+<a href="#" class="btn btn-primary">Go to the playlist</a>
+</div>
+</div>
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4">
+              <div class="card" style="width: 18rem;">
+<img src="th (3).jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Saad El Ghamidi</h5>
+<p class="card-text">Title:Quran<br>Duration:10:00:00</p>
+<a href="#" class="btn btn-primary">Go to the playlist</a>
+</div>
+</div>
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4">
+              <div class="card" style="width: 18rem;">
+<img src="th (4).jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Yasser Al-Dosari</h5>
+<p class="card-text">Title:Quran<br>Duration:10:00:00</p>
+<a href="#" class="btn btn-primary">Go to the playlist</a>
+</div>
+</div>
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4">
+              <div class="card" style="width: 18rem;">
+<img src="th (6).jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Fatih Seferagic</h5>
+<p class="card-text">Title:Quran<br>Duration:10:00:00</p>
+<a href="#" class="btn btn-primary">Go to the playlist</a>
+</div>
+</div>
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4">
+            <div class="card" style="width: 18rem;">
+<img src="th (7).jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Ahmad Al Nufais</h5>
+<p class="card-text">Title:Quran<br>Duration:10:00:00</p>
+<a href="#" class="btn btn-primary">Go to the playlist</a>
+</div>
+</div>
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4">
+            <div class="card" style="width: 18rem;">
+<img src="th (8).jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Hazza Al Balushi</h5>
+<p class="card-text">Title:Quran<br>Duration:10:00:00</p>
+<a href="#" class="btn btn-primary">Go to the playlist</a>
+</div>
+</div>
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4">
+            <div class="card" style="width: 18rem;">
+<img src="th (9).jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Abdurahman Eloosi</h5>
+<p class="card-text">Title:Quran<br>Duration:10:00:00</p>
+<a href="#" class="btn btn-primary">Go to the playlist</a>
+</div>
+</div>
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4">
+              <div class="card" style="width: 18rem;">
+<img src="th (10).jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Nasser Al Qatami</h5>
+<p class="card-text">Title:Quran<br>Duration:10:00:00</p>
+<a href="#" class="btn btn-primary">Go to the playlist</a>
+</div>
+</div>
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4">
+              <div class="card" style="width: 18rem;">
+<img src="th (11).jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Mahmood Khalil Al-Hussary</h5>
+<p class="card-text">Title:Quran<br>Duration:10:00:00</p>
+<a href="#" class="btn btn-primary">Go to the playlist</a>
+</div>
+</div>
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4">
+              <div class="card" style="width: 18rem;">
+<img src="th.jpeg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Mishary Rashid Alafasy</h5>
+<p class="card-text"> Title:Quran<br>Duration:10:00:00</p>
+<a href="#" class="btn btn-primary">Go to the playlist</a>
+</div>
+</div>
+          </div>
+          
+
+        </div>
+      </div>
+
+<!-- EXERCISE 4
+        Create a section for the album reviews.
+        Pick one of your fav albums, and create a section with:
+        - Cover
+        - Title
+        - Band
+        - Duration
+        - Genre
+        - Tracklist
+        - ... And whatever you think it's interesting about it!
+    -->
+
+    <!--Exercise 4 completed by implementing cards as a playlist in the exercise section 3-->
+
+
+<!-- EXERCISE 5
+        Worst album list! Find out the music you don't really like or you find overrated and list it
+        in this "hall of shame" chart!
+    -->
+
+<!-- EXERCISE 6
+        Do you have any musician / band you admire or you are a fan of?
+        This section is dedicated to him / her / them!
+        Feel free to experiment in this part of the page.
+    -->
+    <!--Exercise 6 can be seen from the codes of 3-->
+
+<!-- EXERCISE 7
+        Just covers!
+        Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+        Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+    -->
+<!--I think i completed on the 3rd exercise-->
+<!-- EXERCISE 8
+        Implement a footer with some information / social links
+    -->
+  <footer>
+      <h6>Social links for the compositors</h6>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <a href="https://www.facebook.com/mishary.alafasy" class="fa fa-facebook">Mishary Alafasy</a>
+  </footer>
+
+    <!-- EXERCISE 1
+        Create a Jumbotron section with a quick explanation / image of the website.
+        Make it appear with a fade-in animation effect when the page loads.
+    -->
+
+    <!-- EXERCISE 2
+        Use the Bootstrap Card to contain every album in the favorite list.
+        Use the elements of a card to display nicely the album informations such as album title, artist, year, etc..
+    -->
+
+    <!-- EXERCISE 3
+        Foreach album in the favorite list, place a badge on top of it with the genre of the album
+    -->
+
+    <!-- EXERCISE 4
+        Create a section with an album tracklist inside a Bootstrap table.
+        The row colors of the table must be alternated.
+
+        There should be a column for the track order number, one for the title and one for the track duration.
+        (If you want, you can also add extra columns)
+    -->
+
+    <!-- EXERCISE 5
+        Add a DELETE bootstrap button at the end of each row of the tracklist. 
+        Attach the functionality to remove its row when it gets clicked.  
+
+        ##EXTRA##
+        Make only one button visible at a time, for each row, when the single row gets hovered. 
+        Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
+    -->
+
+    <!-- EXERCISE 6
+        Add an "Add Track" button under the tracklist of the album. 
+        It should have a nice shadow transition when it gets hovered (with the box-shadow property) to look like 
+        the button was elevating itself every time the user hovers onto it.        
+    -->
+
+    <!-- EXERCISE 7
+        On the click of "Add Track" button, a modal should appear.
+        (check in the documentation the modal+button example)
+        
+        The modal shall contain input fields with (avoid using a <form>):
+        - Track number
+        - Track title
+        - Track duration
+        - Track featuring
+        - Live Track (checkbox)
+
+        The fields should be inside an Input Group and divided in 2 columns.
+    -->
+
+    <!-- EXERCISE 8
+        The modal should contain 2 buttons at the bottom:
+        - Add => Adds a new track in the tracklist with the data of the input fields.
+        - Close => closes the modal
+
+        https://getbootstrap.com/docs/4.6/components/alerts/
+        [EXTRA] Make the message disappear after 5 seconds
+        https://www.w3schools.com/jsref/met_win_settimeout.asp
+    -->
+
+    <!-- EXERCISE 8
+        Alert the user with a success message when the track gets added, or when a track gets deleted.
+     -->
+
+
+    <!-- ############### -->
+    <!-- ###  EXTRA  ### -->
+    <!-- ############### -->
+
+    <!-- EXERCISE 9
+         All the field (except for Feat. and Live Track) are required fields and require validation.
+         If the user clicks on the Add button and some fields are empty, a warning alert must be shown
+     -->
+
+    <!-- EXERCISE 10
+        Make sure the "Close" button clears out the input fields AND closes the modal
+     -->
+
+    <!-- EXERCISE 11
+        Considering the "Add Track" functionality that you've created on ex. 8: 
+         - The new list-element added to the list should appear with a fade-in effect
+     -->
+
+    <!-- EXERCISE 12
+        Considering the button you've created in ex. 5 that deletes the row:
+        Add a fade-out effect to the row before it gets removed, using a CSS transition effect
+    -->
+</body>
+
+</html>
